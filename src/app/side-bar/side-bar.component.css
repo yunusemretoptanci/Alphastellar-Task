@@ -1,0 +1,33 @@
+.sidebar{
+    position: fixed;
+    right: 0;
+    height: 100%;
+    width: 190px;
+    z-index: 1;
+    background-color: #8CA1A5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar div{
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.sidebar div:hover{
+    background-color: #A5BECC;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 640px) {
+    .sidebar{
+        display: none;
+    }
+  }

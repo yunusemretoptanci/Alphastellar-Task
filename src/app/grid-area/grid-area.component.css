@@ -1,0 +1,145 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: auto 1fr;
+   
+}
+
+.menu-items div{
+    width: 180px;
+    height: 35px;
+    border: 1px solid black;
+    background-color: pink;
+}
+.main-area{
+    display: grid;
+    width: 97.35%;
+    margin-left: 20px;
+}
+
+.form-area{
+    display: grid;
+    
+}
+
+.form-area input{
+    margin-top: 35px;
+    height: 70px;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+.title{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: #6D8299;
+    display: grid;
+    height: 35px;
+    color: aliceblue;
+    border-radius: 10px;
+    
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.buttons button{
+    width: 100%;
+    height: 70px;
+    background-color: #99A799;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+.buttons button:disabled{
+    opacity: 0.3;
+    cursor: no-drop;
+  }
+  .buttons button:hover{
+      opacity: 0.5;
+  }
+
+  .menu-items div{
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+.menu-items div:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.purple{
+    background-color: #4C3575 !important;
+}
+.orange{
+    background-color: #F24C4C  !important;
+}
+.pink{
+    background-color: #FFC3C3  !important;
+}
+.green{
+    background-color: #809A6F !important;
+}
+.blue{
+    background-color: #646FD4 !important;
+}
+.turquoise{
+    background-color: #82DBD8 !important;
+}
+.brown{
+    background-color: #A64B2A !important;
+}
+.burgundy{
+    background-color: #9C0F48 !important;
+}
+.blue2{
+    background-color: #6867AC !important;
+}
+.black{
+    background-color: #04293A !important;
+}
+.yellow{
+    background-color: #FFCC1D  !important;
+}
+
+@media only screen and (max-width: 640px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-auto-flow: column dense;
+        gap: 0;
+        justify-items: center;
+    }
+    .menu-items{
+        margin-top: 80px;
+        padding-bottom: 30px;
+        grid-row: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 100%;
+        
+    }
+    .menu-items div{
+        width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    .main-area{
+        width: 100%;
+        margin: 0;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .form-area input{
+        height: 90px;
+    }
+    .title{
+        height: 50px;
+    }
+  }
